@@ -19,7 +19,7 @@ setup(
     packages=find_packages(),
     install_requires=open('requirements.txt').readlines(),
     package_data={'':['*']},
-    python_requires='=3.6.1',
+    python_requires='>=3.6.1',
     zip_safe=False,
     classifiers=[
         "Programming Language :: Python :: 3",
