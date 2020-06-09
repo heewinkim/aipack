@@ -197,8 +197,10 @@ if __name__ == '__main__':
         img_cv = cv2.resize(img_cv,(300,300))
         img_cv = cv2.cvtColor(img_cv,cv2.COLOR_BGR2RGB)
         return img_cv
-    # Data.processing(dataset,preprocessFunc=preFunc)
-    tfrecord_path='/Users/hian/heewinkim_git/aipack/aipack/dataset.tfrecord'
+
+    Data.processing(dataset,dataset_name='dataset',output_directory='.', preprocessFunc=preFunc)
+
+    tfrecord_path='dataset.tfrecord'
     raw_dataset, decode = Data.read_tfrecord(tfrecord_path)
     for raw_data in raw_dataset:
         data = decode(raw_data,eager=True)
