@@ -11,8 +11,8 @@ class Util(object):
         for i, layer in enumerate(model.layers):
             if i != 0:
                 print("_" * 89)
-            inputs = layer.input if type(layer.input) == list else [layer.input]
-            outputs = layer.output if type(layer.output) == list else [layer.output]
+            inputs = list(layer.input) if type(layer.input) in [list, tuple] else [layer.input]
+            outputs = list(layer.output) if type(layer.output) in [list, tuple] else [layer.output]
             max_length = max(len(inputs), len(outputs))
 
             if max(len(inputs), len(outputs)) > 1:

@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 packages = list(open('requirements.txt').readlines())
 setup(
     name='aipack',
-    version='0.0.3',
+    version='0.0.4',
     author='HEESEUNG KIM',
     author_email='heewin.kim@gmail.com',
     description='AI Package',
