@@ -1,13 +1,14 @@
 import tensorflow as tf
 from .converter import Converter
 from .data import Data
+from .util import Util
 
 
 class TensorflowPack(object):
 
     converter = Converter
     data = Data
-
+    util = Util
 
 
 
