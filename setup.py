@@ -12,9 +12,9 @@ setup(
     author='HEESEUNG KIM',
     author_email='heewin.kim@gmail.com',
     description='AI Package',
-    long_description="""AI Package
+    long_description="""AI Package\n
     본 패키지는 AI Package로써 딥러닝관련한 여러가지 유틸기능들을 포함합니다.\n
-    자세한 사용법은 Git 페이지를 확인해주세요
+    자세한 사용법은 Git 페이지를 확인해주세요.
     """,
     license='MIT',
     url='https://github.com/heewinkim/aipack',
