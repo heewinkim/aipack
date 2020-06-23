@@ -53,7 +53,7 @@ class Converter(object):
     @staticmethod
     def model2frozengraph(model, save_dir='./frozen_models'):
 
-        frozen_func = TensorflowPack.model2function(model, freeze=True)
+        frozen_func = Converter.model2function(model, freeze=True)
         tf.io.write_graph(graph_or_graph_def=frozen_func.graph,
                           logdir=save_dir,
                           name="frozen_graph.pb",
